@@ -69,7 +69,7 @@ $menus = new WP_Query($args); ?>
 			<tr class="menu-page matsedlar-container">
 				<td class="menu-img-container">
 					<?php
-					echo "<a href=" . get_permalink() . "><img class='matsedlar-img' src=" . get_the_post_thumbnail() . "</a>"; ?>
+					echo "<a href=" . get_permalink() . "><img class='matsedlar-img' src=" . get_the_post_thumbnail(the_post()) . "</a>"; ?>
 					<div class="middle-menu-img">
 						<div class="menu-img-hovertext"><?php the_title(); ?></div>
 					</div>
