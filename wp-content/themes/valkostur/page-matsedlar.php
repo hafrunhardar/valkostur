@@ -73,13 +73,10 @@ $menus = new WP_Query($args); ?>
 						echo $post->ID;
 						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 						echo '<img class="matsedlar-img" src="'.$image[0].'" alt="menu-img">';
-					}
-
-
-					/*echo "<a href=" . get_permalink() . "><img class='matsedlar-img' src=" .  . "</a>"; ?>
+					} ?>
 					<div class="middle-menu-img">
 						<div class="menu-img-hovertext"><?php the_title(); ?></div>
-					</div>*/ ?>
+					</div>
 				</td>
 				<td class="entry-wrap">
 					<h1 class="entry-title">
