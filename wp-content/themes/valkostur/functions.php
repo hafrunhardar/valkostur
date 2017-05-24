@@ -206,10 +206,10 @@ function get_attachment_url_by_slug( $slug ) {
 */
 function add_data( $type, $subtype, $name ,$description, $price) {
 	global $wpdb;
-	$servername = "localhost";
-	$username = "valkostur";
-	$password = "einsikokkur";
-	$dbname = "valkostur";
+	$servername = "us-cdbr-iron-east-03.cleardb.net";
+	$username = "b1d4a8874d4b99";
+	$password = "4ac90e9f";
+	$dbname = "heroku_1c468420a264ace";
 
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -249,10 +249,10 @@ function add_data( $type, $subtype, $name ,$description, $price) {
 /* Remove data from the database
 */
 function remove_data( $id ) {
-	$servername = "localhost";
-	$username = "valkostur";
-	$password = "einsikokkur";
-	$dbname = "valkostur";
+	$servername = "us-cdbr-iron-east-03.cleardb.net";
+	$username = "b1d4a8874d4b99";
+	$password = "4ac90e9f";
+	$dbname = "heroku_1c468420a264ace";
 
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
