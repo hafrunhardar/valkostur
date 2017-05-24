@@ -205,6 +205,8 @@ function get_attachment_url_by_slug( $slug ) {
 /* Add data from user to database
 */
 function add_data( $type, $subtype, $name ,$description, $price) {
+	$createStmt = "CREATE TABLE IF NOT EXISTS `veislur` ( `type` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `subtype` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `name` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `description` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `price` INT NOT NULL , `id` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;"
+
 	global $wpdb;
 	$servername = "eu-cdbr-west-01.cleardb.com";
 	$username = "b2ae4d8c35922a";
@@ -217,6 +219,14 @@ function add_data( $type, $subtype, $name ,$description, $price) {
 	if ($conn->connect_error) {
 	    die("Connection failed: " . $conn->connect_error);
 	} 
+
+	// Check if table exists
+	if ($conn->query($createStmt) === TRUE) {
+    	echo "Table veislur has been created!";
+	} else {
+	    echo "Error creating table: " . $conn->error;
+	}
+
 
 	$typeEs = mysqli_real_escape_string($conn, $type);
 	$subtypeEs = mysqli_real_escape_string($conn, $subtype);
