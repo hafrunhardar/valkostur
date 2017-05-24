@@ -211,7 +211,7 @@ function add_data( $type, $subtype, $name ,$description, $price) {
 	$password = "66d9839c";
 	$dbname = "heroku_e04b4bca2795a90";
 	
-	$createStmt = "CREATE TABLE IF NOT EXISTS `veislur` ( `type` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `subtype` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `name` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `description` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `price` INT NOT NULL , `id` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;"
+	$createStmt = "CREATE TABLE IF NOT EXISTS `veislur` ( `type` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `subtype` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `name` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `description` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `price` INT NOT NULL , `id` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;";
 
 
 	// Create connection
