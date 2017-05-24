@@ -210,9 +210,6 @@ function add_data( $type, $subtype, $name ,$description, $price) {
 	$username = "b2ae4d8c35922a";
 	$password = "66d9839c";
 	$dbname = "heroku_e04b4bca2795a90";
-	
-	$createStmt = "CREATE TABLE IF NOT EXISTS `veislur` ( `type` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `subtype` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `name` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `description` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `price` INT NOT NULL , `id` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;";
-
 
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -222,11 +219,12 @@ function add_data( $type, $subtype, $name ,$description, $price) {
 	} 
 
 	// Check if table exists
+	/*$createStmt = "CREATE TABLE IF NOT EXISTS `veislur` ( `type` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `subtype` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `name` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `description` TEXT CHARACTER SET ucs2 COLLATE ucs2_icelandic_ci NOT NULL , `price` INT NOT NULL , `id` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = MyISAM;";
 	if ($conn->query($createStmt) === TRUE) {
     	echo "Table veislur has been created!";
 	} else {
 	    echo "Error creating table: " . $conn->error;
-	}
+	}*/
 
 
 	$typeEs = mysqli_real_escape_string($conn, $type);
