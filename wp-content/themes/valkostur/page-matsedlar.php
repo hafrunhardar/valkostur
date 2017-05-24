@@ -69,14 +69,16 @@ $menus = new WP_Query($args); ?>
 			<tr class="menu-page matsedlar-container">
 				<td class="menu-img-container">
 					<?php
-					if (has_post_thumbnail( $post->ID ) ) {
-						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-						
-						<?php echo "<a href=" . get_permalink() . ">" . echo '<img class="banner-img" src="'.$image[0].'" alt="menu-image">' . "</a>"; ?>
-						<div class="middle-menu-img">
-							<div class="menu-img-hovertext"><?php the_title(); ?></div>
-						</div>
+					if (has_post_thumbnail($post->ID)) {
+						$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+						echo '<img class="banner-img" src="'.$image[0].'" alt="site-banner">';
 					}
+
+
+					/*echo "<a href=" . get_permalink() . "><img class='matsedlar-img' src=" .  . "</a>"; ?>
+					<div class="middle-menu-img">
+						<div class="menu-img-hovertext"><?php the_title(); ?></div>
+					</div>*/ ?>
 				</td>
 				<td class="entry-wrap">
 					<h1 class="entry-title">
