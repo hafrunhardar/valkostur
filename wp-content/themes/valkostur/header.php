@@ -30,6 +30,10 @@
   		-o-background-size: cover;
   		background-size: cover;">
 
+
+<?php 
+// Get menu items
+$menu_items = wp_get_nav_menu_items( 'PrimaryMenu' ); ?>
 <div class="page-row">
 	<div class="col-2"></div>
 	<div id="page" class="col-8 site">
@@ -37,12 +41,24 @@
 
 		<header id="masthead" class="site-header" role="banner">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+					<div class="menu-header">
+						<ul id="menu-primarymenu" class="menu">
+						<?php 
+							foreach ((array) $menu_items as $key => $menu_item) { ?>
+								<li id="menu-item" class="menu-item"> 
+								<?php echo "<a href=" . $menu_item->url . ">" . $menu_item->title . "</a>"; ?>
+								</li>
+					 		<?php  
+					 		} ?>
+						</ul>
+					</div>
 				</nav>
 		</header>
 
 		<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-		<label for="nav-trigger"></label>
+		<label for="nav-trigger"> 
+			<img src="<?php echo get_attachment_url_by_slug( 'menu' ); ?>" class="nav-trigger-img">
+		</label>
 
 
 <div id="content" class="site-content"> 

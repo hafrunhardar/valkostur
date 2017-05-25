@@ -19,9 +19,9 @@
 	<footer id="site-footer" class="col-12 secondary">
 		<div id="footer-sidebar1" class="col-12">
 			<h3>Fylgstu með okkur:</h3>
-			<a href="https://www.facebook.com/"> <img src="<?php echo get_attachment_url_by_slug( '1494552366_facebook' ) ?>">
-			<a href="https://www.instagram.com/"> <img src="<?php echo get_attachment_url_by_slug( '1494552382_instagram' ) ?>">
-			<a href="http://localhost/valkostur1/wordpress/hafdu-samband/"> <img src="<?php echo get_attachment_url_by_slug( '1494554247_mail' ) ?>">
+			<a href="https://www.facebook.com/" class="footer-link"> <img src="<?php echo get_attachment_url_by_slug( '1494552366_facebook' ) ?>" alt="Facebook"></a>
+			<a href="https://www.instagram.com/" class="footer-link"> <img src="<?php echo get_attachment_url_by_slug( '1494552382_instagram' ) ?>" alt="Instagram"></a>
+			<a href="http://valkostur.com/?page_id=49" class="footer-link"> <img src="<?php echo get_attachment_url_by_slug( '1494554247_mail' ) ?>" alt="Hafa samband"></a>
 		</div>
 	</footer>
 </div>
