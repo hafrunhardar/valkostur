@@ -1,4 +1,14 @@
 <?php
+/**
+ * The Contact page for Valkostur theme.
+ *
+ * This is the template that displays the contact form. 
+ *
+ * @package valkostur
+ * 
+ * author: Hafrún Harðardóttir
+ */
+
 get_header();
 ?>
 

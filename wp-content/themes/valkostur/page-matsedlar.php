@@ -1,5 +1,16 @@
 <?php
 
+/**
+* The front page for Valkostur theme.
+*
+* This is the template that displays the front page. 
+*
+* @package valkostur
+* 
+* author: Hafrún Harðardóttir
+*/
+
+
 get_header(); ?>
 
 <div id="primary" class="content-area">

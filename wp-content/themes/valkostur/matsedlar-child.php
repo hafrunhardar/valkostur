@@ -1,4 +1,14 @@
 <?php
+/**
+ * Subpages from matsedlar page in Valkostur theme.
+ *
+ * This is the template that subpages of the front page.
+ *
+ * @package valkostur
+ * 
+ * author: Hafrún Harðardóttir
+ */
+
 	global $wpdb;
 	$data = $wpdb->get_results( "SELECT * FROM veislur" );
 

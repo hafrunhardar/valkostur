@@ -1,4 +1,16 @@
-<?php get_header(); ?>
+<?php 
+/**
+* The image section for Valkostur theme.
+*
+* This is the template that displays images from Instagram
+*
+* @package valkostur
+* 
+* author: Hafrún Harðardóttir
+*/
+
+get_header(); 
+?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

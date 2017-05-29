@@ -5,6 +5,12 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package valkostur
+ * 
+ * Functions written by Hafrún Harðardóttir:
+ * add_data( $type, $subtype, $name ,$description, $price) ,
+ * remove_data( $id )
+ * create_menu_table( $type, $subtype, $data )
+ * send_message($name, $mobile, $email, $message, $timestamp)
  */
 
 if ( ! function_exists( 'valkostur_setup' ) ) :
@@ -331,7 +337,7 @@ function create_menu_table( $type, $subtype, $data ) {
 function send_message($name, $mobile, $email, $message, $timestamp) {
 	/* Configuration */
 	$subject = 'Valkostur'; 
-	$mailto  = 'einara89@gmail.com'; 
+	$mailto  = 'einsia89@gmail.com'; 
 	/* END Configuration */
 
 	$name = utf8_decode($name);

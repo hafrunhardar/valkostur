@@ -1,13 +1,15 @@
 <?php
 /**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section 
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package valkostur
- */
+* The header for Valkostur theme.
+*
+* This is the template that displays all of the <head> section 
+*
+* @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+*
+* @package valkostur
+* 
+* author: Hafrún Harðardóttir
+*/
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
